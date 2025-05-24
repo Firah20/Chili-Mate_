@@ -29,8 +29,10 @@ initialize_session_states()
 # Sidebar navigation
 import os
 
-if os.path.exists("images/logo.jpg"):
-    st.sidebar.image("images/logo.jpg", width=200)
+logo_path = os.path.join(os.path.dirname(__file__), "images", "logo.jpg")
+
+if os.path.exists(logo_path):
+    st.sidebar.image(logo_path, width=200)
 else:
     st.sidebar.error("❌ File logo tidak ditemukan!")
 
