@@ -29,8 +29,8 @@ initialize_session_states()
 # Sidebar navigation
 import os
 
-if os.path.exists("streamlit-ecommerce/images/logo.jpg"):
-    st.sidebar.image("streamlit-ecommerce/images/logo.jpg", width=200)
+if os.path.exists("images/logo.jpg"):
+    st.sidebar.image("images/logo.jpg", width=200)
 else:
     st.sidebar.error("❌ File logo tidak ditemukan!")
 
